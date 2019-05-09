@@ -46,7 +46,7 @@ Com esta API([pokeapi v2](https://pokeapi.co/docsv2/#)) em mãos, precisamos que
 
 # Tecnologias que deve estar presentes no teste
 
-- React
+- React ou React Native
 - Redux
 - SCSS, SASS ou outros precompiladores que for de seu domínio
 - HTML5
