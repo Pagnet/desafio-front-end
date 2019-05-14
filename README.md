@@ -52,6 +52,9 @@ Com esta API([pokeapi v2](https://pokeapi.co/docsv2/#)) em mãos, precisamos que
 - HTML5
 - Testes
 
+**Não necessário mas se tiver será um diferencial**
+
+- Redux-saga
 
 # Avaliação
 
