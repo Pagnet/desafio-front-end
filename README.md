@@ -44,18 +44,12 @@ Com esta API([pokeapi v2](https://pokeapi.co/docsv2/#)) em mãos, precisamos que
 3. Lidar com APIs que não seja a recomendada pelo teste
 4. Ser escrita usando algum framework específico (mas não há nada errado em usá-los também, use o que achar melhor).
 
-# Tecnologias que deve estar presentes no teste, se estiver aplicado a vaga de front WEB
+# Tecnologias que deve estar presentes no teste
 
-- React(se estiver aplicado para **vaga de front WEB**) 
+- React ou React Native
 - Redux
 - SCSS, SASS ou outros precompiladores que for de seu domínio
 - HTML5
-- Testes
-
-# Tecnologias que deve estar presentes no teste, se estiver aplicado a vaga de front MOBILE
-
-- React Native (se estiver aplicado para **vaga de front MOBILE**) 
-- Redux
 - Testes
 
 **Não necessário mas se tiver será um diferencial**
