@@ -48,9 +48,7 @@ Com esta API([pokeapi v2](https://pokeapi.co/docsv2/#)) em mãos, precisamos que
 
 - React
 - Redux
-- SCSS, SASS ou outros precompiladores que for de seu domínio
-- HTML5
-- Testes
+- React Testing Library
 
 **Não necessário mas se tiver será um diferencial**
 
@@ -71,4 +69,3 @@ Adicionalmente, tentaremos verificar a sua familiarização com as bibliotecas p
 ---
 
 ## Boa sorte!
-
