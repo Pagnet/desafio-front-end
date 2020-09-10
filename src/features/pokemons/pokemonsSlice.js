@@ -35,7 +35,8 @@ export const getPokemonsAsync = () => dispatch => {
 export const getFilterPokemonsAsync = value => dispatch => {
   axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`)
     .then(res => {
-      dispatch(setPokemonsFilter([res.data.species]));
+      console.log(res.data)
+      dispatch(setPokemonsFilter([res.data]));
     })
 };
 

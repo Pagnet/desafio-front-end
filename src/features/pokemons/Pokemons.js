@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import {
   getPokemonsAsync,
   selectPokemons,
@@ -18,7 +19,6 @@ export function Pokemons() {
 
   useEffect(()=>{
     setPokemonsData(pokemons.state.pokemons.results)
-    console.log(pokemons)
   }, [pokemons])
 
   return (
@@ -26,9 +26,11 @@ export function Pokemons() {
       {pokemonsData && pokemonsData.map((value, index) => {
         return (
           <div key={index}>
-            <h1>
-              {value.name}
-            </h1>
+            <Link to={'/detail/' + index} className="nav-link">
+              <h1>
+                {value.name}
+              </h1>
+            </Link>
           </div>
         )
       })}
