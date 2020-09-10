@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pokemons } from './features/pokemons/Pokemons';
 import{ Filter } from './features/filter/Filter';
-import './App.css';
+import './App.scss';
 import { Detail } from './features/detail/Detail';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 

@@ -1,0 +1,30 @@
+.filter{
+    width:100%;
+    padding-top:30px;
+    padding-bottom:30px;
+    justify-content: center;
+    display:flex;
+    background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
+    input{
+       width:100%;
+       max-width:400px;
+       border:#fff 1px solid;
+       background:transparent;
+       color:#fff;
+       padding-top:7px;
+       padding-bottom:7px;
+       padding-left:5px;
+       border-radius:0 !important;
+       &::placeholder{
+        color:#fff;
+        letter-spacing: 2px;
+        font-weight:100;
+       }
+       &:focus{
+           border-radius:none !important;
+       }
+
+    
+    }
+  
+}

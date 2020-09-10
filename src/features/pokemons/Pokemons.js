@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import './Pokemon.scss';
 import {
   getPokemonsAsync,
   selectPokemons,
@@ -25,7 +26,7 @@ export function Pokemons() {
     <div>
       {pokemonsData && pokemonsData.map((value, index) => {
         return (
-          <div key={index}>
+          <div className="box" key={index}>
             <Link to={'/detail/' + index} className="nav-link">
               <h1>
                 {value.name}
