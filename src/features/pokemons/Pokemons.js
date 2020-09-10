@@ -17,7 +17,7 @@ export function Pokemons() {
     !pokemonsData && dispatch(getPokemonsAsync());
   });
 
-  useEffect(()=>{
+  useEffect(() => {
     setPokemonsData(pokemons.state.pokemons.results)
   }, [pokemons])
 

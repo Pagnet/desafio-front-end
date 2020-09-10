@@ -10,13 +10,17 @@ export function Detail() {
   useEffect(() => {
     //window.location.pathname.replace(/\D/g, '')
     setDetailPokemon(pokemons.state.pokemons);
-    console.log(pokemons.state.pokemons.results[0].weight);
   });
 
   return (
     <>
       <div>{detailPokemon && detailPokemon.name}</div>
-      <div>{pokemons.state.pokemons.results[0].weight}</div>
+      <div>Weight: {pokemons.state.pokemons.results[0].weight}</div>
+      <div>Height: {pokemons.state.pokemons.results[0].height}</div>
+      <div><img alt="Abilitie" src={pokemons.state.pokemons.results[0].sprites.back_default} /></div>
+      <div><img alt="Abilitie" src={pokemons.state.pokemons.results[0].sprites.back_shiny} /></div>
+      <div><img alt="Abilitie" src={pokemons.state.pokemons.results[0].sprites.front_default} /></div>
+      <div><img alt="Abilitie" src={pokemons.state.pokemons.results[0].sprites.front_shiny} /></div>
     </>
   );
   
