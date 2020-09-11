@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Pokemon.scss';
+import{ Filter } from '../filter/Filter';
 import {
   getPokemonsAsync,
   selectPokemons,
@@ -18,6 +19,8 @@ export function Pokemons() {
   }, [pokemons])
 
   return (
+    <>
+    <Filter />
     <div className="pokemons-container">
       {<h2>digite o nome do seu pokemon</h2>}
       {pokemonsData && pokemonsData.map((value, index) => {
@@ -32,5 +35,6 @@ export function Pokemons() {
         )
       })}
     </div>
+    </>
   );
 }
