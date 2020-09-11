@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Pokemon.scss';
 import {
@@ -10,20 +10,16 @@ import {
 
 export function Pokemons() {
   const pokemons = useSelector(selectPokemons);
-  const dispatch = useDispatch();
 
   const [pokemonsData, setPokemonsData] = useState();
 
   useEffect(() => {
-    !pokemonsData && dispatch(getPokemonsAsync());
-  });
-
-  useEffect(() => {
-    setPokemonsData(pokemons.state.pokemons.results)
+    setPokemonsData(pokemons.state.pokemons.results);
   }, [pokemons])
 
   return (
-    <div>
+    <div className="pokemons-container">
+      {<h2>digite o nome do seu pokemon</h2>}
       {pokemonsData && pokemonsData.map((value, index) => {
         return (
           <div className="box" key={index}>

@@ -1,0 +1,23 @@
+.detail-global{
+    display: flex;
+    justify-content: center;
+    .perfil{
+        width:100%;
+    }
+    .detail{
+        max-width:500px !important;
+        width:100%;
+        margin-left:0 !important;
+        margin-right:0 !important;
+        display:block !important;
+        width:100%;
+        .pictures{
+            display: flex;
+        }
+        h2{
+            color: #bb193f;
+            margin-bottom:5px;
+            margin-left:22px;
+        }
+    }
+}

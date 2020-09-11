@@ -29,15 +29,22 @@ export const getPokemonsAsync = () => dispatch => {
       dispatch(setPokemons(res.data));
     })
 
+
 };
 
 
 export const getFilterPokemonsAsync = value => dispatch => {
-  axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`)
-    .then(res => {
-      console.log(res.data)
-      dispatch(setPokemonsFilter([res.data]));
-    })
+
+  if (!value) {
+    dispatch(setPokemonsFilter([]));
+  } else {
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`)
+      .then(res => {
+        dispatch(setPokemonsFilter([res.data]));
+      })
+  }
+
+
 };
 
 // The function below is called a selector and allows us to select a value from

@@ -1,10 +1,17 @@
-.box{
-    border: 1px solid #ebebeb;
-    display:inline-block;
-    width:30%;
-    margin:1.5%;
-    h1{
-        margin-left:10px;
-        color:#bb193f;
+.pokemons-container {
+    .box {
+        border: 1px solid #ebebeb;
+        display: inline-block;
+        width: 30%;
+        margin: 1.5%;
+        h1 {
+            margin-left: 10px;
+            color: #bb193f;
+        }
+    }
+
+    h2 {
+        color: #bb193f !important;
+        text-align: center !important;
     }
 }
