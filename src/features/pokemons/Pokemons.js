@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './Pokemon.scss';
 import{ Filter } from '../filter/Filter';
 import {
-  getPokemonsAsync,
   selectPokemons,
 } from './pokemonsSlice';
 

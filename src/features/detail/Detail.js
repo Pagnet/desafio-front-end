@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectPokemons } from '../pokemons/pokemonsSlice';
 import './Detail.scss';
 import { Stats } from "./stats/Stats";
+import { Pokedex } from './img/pokedex.svg';
 
 export function Detail() {
 
@@ -10,14 +11,22 @@ export function Detail() {
   const [detailPokemon, setDetailPokemon] = useState();
 
   useEffect(() => {
-    //window.location.pathname.replace(/\D/g, '')
     setDetailPokemon(pokemons.state.pokemons);
   }, []);
+
+  const addPokedex = () => {
+    const detail = {
+      id: window.location.pathname.replace(/\D/g, ''),
+      name: detailPokemon.name
+    }
+    localStorage.setItem('pokedex', JSON.stringify(detail));
+  }
 
   return (
     <div className="detail-global">
       <div className="detail">
         <h1>{pokemons.state.pokemons.results[0].name}</h1>
+        <div onClick={()=> addPokedex()} className="pokedex"><img src={ Pokedex } /> Adicionar a pokedex</div>
         <div className="pictures">
           <div><img alt="Back" src={pokemons.state.pokemons.results[0].sprites.back_default} /></div>
           <div><img alt="Back Shiny" src={pokemons.state.pokemons.results[0].sprites.back_shiny} /></div>
