@@ -1,0 +1,33 @@
+.detail-global{
+    display: flex;
+    justify-content: center;
+    h1{
+        font-size:40px;
+        color:#550f28;
+    }
+    .pokedex{
+        color:#fff;
+        font-weight:700;
+    }
+    .perfil{
+        width:100%;
+    }
+    .detail{
+        max-width:500px !important;
+        width:100%;
+        margin-left:0 !important;
+        margin-right:0 !important;
+        display:block !important;
+        margin-bottom:50px;
+        margin-top:50px;
+        width:100%;
+        .pictures{
+            display: flex;
+        }
+        h2{
+            color: #fff;
+            margin-bottom:5px;
+            margin-left:22px;
+        }
+    }
+}
