@@ -4,11 +4,14 @@
     padding-bottom:30px;
     justify-content: center;
     display:flex;
-    background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%) !important;
     input{
        width:100%;
-       max-width:400px;
-       border:#fff 1px solid;
+       max-width:600px;
+       border-bottom:#fff 3px solid;
+       border-top:0;
+       border-left:0;
+       border-right:0;
+       padding:20px !important;
        background:transparent;
        color:#fff;
        padding-top:7px;

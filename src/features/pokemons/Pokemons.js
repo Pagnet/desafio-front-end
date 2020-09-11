@@ -20,9 +20,8 @@ export function Pokemons() {
 
   return (
     <>
-    <Filter />
     <div className="pokemons-container">
-      {<h2>digite o nome do seu pokemon</h2>}
+      <Filter />
       {pokemonsData && pokemonsData.map((value, index) => {
         return (
           <div className="box" key={index}>

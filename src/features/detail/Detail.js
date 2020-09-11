@@ -17,6 +17,7 @@ export function Detail() {
   return (
     <div className="detail-global">
       <div className="detail">
+        <h1>{pokemons.state.pokemons.results[0].name}</h1>
         <div className="pictures">
           <div><img alt="Back" src={pokemons.state.pokemons.results[0].sprites.back_default} /></div>
           <div><img alt="Back Shiny" src={pokemons.state.pokemons.results[0].sprites.back_shiny} /></div>
@@ -24,9 +25,9 @@ export function Detail() {
           <div><img alt="Front Shiny Default" src={pokemons.state.pokemons.results[0].sprites.front_shiny} /></div>
         </div>
         <div>{detailPokemon && detailPokemon.name}</div>
-        <div><h2>Weight: {pokemons.state.pokemons.results[0].weight}</h2></div>
-        <div><h2>Height: {pokemons.state.pokemons.results[0].height}</h2></div>
-        <div><h2>Abilities: {pokemons.state.pokemons.results[0].abilities.map((value, i) => value.ability.name + ', ')}</h2></div>
+        <div><h2>weight: {pokemons.state.pokemons.results[0].weight}</h2></div>
+        <div><h2>height: {pokemons.state.pokemons.results[0].height}</h2></div>
+        <div><h2>abilities: {pokemons.state.pokemons.results[0].abilities.map((value, i) => value.ability.name + ', ')}</h2></div>
         <Stats data={pokemons.state.pokemons.results[0].stats}></Stats>
       </div>
     </div>

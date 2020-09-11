@@ -1,6 +1,10 @@
 .detail-global{
     display: flex;
     justify-content: center;
+    h1{
+        font-size:40px;
+        color:#550f28;
+    }
     .perfil{
         width:100%;
     }
@@ -17,7 +21,7 @@
             display: flex;
         }
         h2{
-            color: #bb193f;
+            color: #fff;
             margin-bottom:5px;
             margin-left:22px;
         }

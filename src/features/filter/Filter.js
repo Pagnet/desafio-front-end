@@ -16,7 +16,7 @@ export function Filter() {
 
   return (
     <div className="filter">
-      <input placeholder="Digite o nome de um pokemon" onChange={(e) => searchPokemons(e)} type="text"></input>
+      <input placeholder="digite o id ou nome do seu pokemon" onChange={(e) => searchPokemons(e)} type="text"></input>
     </div>
   );
 }
