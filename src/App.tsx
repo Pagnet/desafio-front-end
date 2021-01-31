@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import "@useblu/ocean-components/dist/ocean-ds.min.css";
 import { Grid } from "@useblu/ocean-components/";
@@ -28,6 +28,10 @@ function App() {
 
               <Route path={ROUTES.INFOS}>
                 <PokemonInfosPage />
+              </Route>
+
+              <Route exact path="/">
+                <Redirect to="/search" />
               </Route>
             </Switch>
           </Grid.Col>
