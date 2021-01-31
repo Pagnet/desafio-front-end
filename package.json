@@ -70,10 +70,10 @@
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
       "^.+\\.module\\.(css|sass|scss)$"
     ],
+
     "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
-      "src/(.*)$": "<rootDir>/src/$1"
-    }
+      "\\.(css|scss)$": "identity-obj-proxy",
+      "\\.(png|svg|pdf|jpg|gif|jpeg)$": "<rootDir>/__mocks__/fileMock.js"
+  }
   }
 }
