@@ -20,6 +20,7 @@
     "@babel/preset-react": "^7.12.10",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
+    "@testing-library/react-hooks": "^5.0.3",
     "@testing-library/user-event": "^12.1.10",
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
@@ -35,6 +36,7 @@
     "enzyme-adapter-react-16": "^1.15.6",
     "enzyme-to-json": "^3.6.1",
     "jest-fetch-mock": "^3.0.3",
+    "redux-mock-store": "^1.5.4",
     "ts-jest": "^26.5.0"
   },
   "scripts": {
@@ -61,7 +63,6 @@
       "last 1 safari version"
     ]
   },
-
   "jest": {
     "transform": {
       "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/ts-jest"
@@ -70,10 +71,9 @@
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
       "^.+\\.module\\.(css|sass|scss)$"
     ],
-
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy",
       "\\.(png|svg|pdf|jpg|gif|jpeg)$": "<rootDir>/__mocks__/fileMock.js"
-  }
+    }
   }
 }
