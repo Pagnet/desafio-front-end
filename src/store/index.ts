@@ -3,6 +3,7 @@ import createSagaMiddleware from "redux-saga";
 
 import rootSaga from "./sagas";
 import searchPokemon from "./search-pokemon";
+import pokedex from "./pokedex";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -11,6 +12,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ || null;
 
 const rootReducer = combineReducers({
   searchPokemon,
+  pokedex,
 });
 
 export default createStore(
