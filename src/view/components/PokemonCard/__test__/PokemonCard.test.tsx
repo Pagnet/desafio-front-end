@@ -10,7 +10,7 @@ describe("PokemonCard", () => {
         pokemon={{
           name: "Eevee",
           id: 133,
-          imagem: "some-image",
+          image: "some-image",
         }}
         primaryButtonText="primary-button"
         primaryButtonAction={() => {}}
@@ -32,7 +32,7 @@ describe("PokemonCard", () => {
         pokemon={{
           name: "Eevee",
           id: 133,
-          imagem: "some-image",
+          image: "some-image",
         }}
         primaryButtonText="primary-button"
         primaryButtonAction={mockedFunction}
@@ -53,7 +53,7 @@ describe("PokemonCard", () => {
         pokemon={{
           name: "Eevee",
           id: 133,
-          imagem: "some-image",
+          image: "some-image",
         }}
         primaryButtonText="primary-button"
         primaryButtonAction={() => {}}

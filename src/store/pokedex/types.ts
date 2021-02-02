@@ -1,9 +1,9 @@
-export interface Pokemon {
+export interface PokemonPokedex {
   name: string;
   image: string;
   id: number;
 }
 
 export interface PokedexState {
-  pokemon: Pokemon[];
+  pokemon: PokemonPokedex[];
 }

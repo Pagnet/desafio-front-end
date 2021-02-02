@@ -2,12 +2,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
 import { pokedexSelectors, pokedexActions } from "../../../store/pokedex";
-import type { Pokemon } from "../../../store/pokedex";
+import type { PokemonPokedex } from "../../../store/pokedex";
 
 import { ROUTES } from "../../../constants";
 
 type usePokedexHookType = {
-  pokemonList: Pokemon[];
+  pokemonList: PokemonPokedex[];
   hasPokemon: boolean;
   handleNavigationButtonPress: () => void;
   handleRemoveButtonPress: (id: number) => void;

@@ -1,12 +1,12 @@
 import { createAction } from "../utils/action-creator";
-import type { Pokemon } from "./types";
+import type { PokemonPokedex } from "./types";
 
 export enum POKEDEX {
   SAVE = "pokedex/SAVE",
   REMOVE = "pokedex/REMOVE",
 }
 
-export const pokedexSavePokemon = createAction<Pokemon>(POKEDEX.SAVE);
+export const pokedexSavePokemon = createAction<PokemonPokedex>(POKEDEX.SAVE);
 export const pokedexRemovePokemon = createAction<number>(POKEDEX.REMOVE);
 
 const action = {

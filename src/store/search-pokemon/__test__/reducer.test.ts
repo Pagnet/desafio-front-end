@@ -28,32 +28,14 @@ const pokemonMock = {
       url: "https://pokeapi.co/api/v2/ability/94/",
     },
   ],
-  stats: [
-    {
-      baseStat: 78,
-      name: "hp",
-    },
-    {
-      baseStat: 84,
-      name: "attack",
-    },
-    {
-      baseStat: 78,
-      name: "defense",
-    },
-    {
-      baseStat: 109,
-      name: "special-attack",
-    },
-    {
-      baseStat: 85,
-      name: "special-defense",
-    },
-    {
-      baseStat: 100,
-      name: "speed",
-    },
-  ],
+  stats: {
+    hp: 70,
+    attack: 80,
+    defense: 50,
+    "special-attack": 35,
+    "special-defense": 35,
+    speed: 35,
+  },
   species: {
     name: "charizard",
     url: "https://pokeapi.co/api/v2/pokemon-species/6/",

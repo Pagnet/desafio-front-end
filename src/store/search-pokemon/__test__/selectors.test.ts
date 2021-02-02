@@ -70,11 +70,6 @@ const mockedState = {
   pokedex: {
     pokemon: [],
   },
-  pokemonInfos: {
-    loading: false,
-    error: null,
-    pokemon: null,
-  },
 };
 
 describe("search pokemon selectors", () => {

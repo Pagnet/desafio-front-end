@@ -6,6 +6,7 @@ import {
   searchPokemonActions,
   searchPokemonSelectors,
 } from "../../../store/search-pokemon";
+import type { PokemonType } from "../../../store/search-pokemon";
 import { pokedexActions } from "../../../store/pokedex";
 import { ROUTES } from "../../../constants";
 
@@ -13,7 +14,7 @@ type useSearchPokemonHookType = {
   searchInputValue: string;
   isLoading: boolean;
   hasError: boolean;
-  pokemonFound: any | null;
+  pokemonFound: PokemonType | null;
   handleSearchInputChange: (e: SyntheticEvent) => void;
   handleClearButtonPress: () => void;
   handleGoButtonPress: () => void;

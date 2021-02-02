@@ -6,6 +6,8 @@ import {
   searchPokemonSelectors,
 } from "../../../store/search-pokemon";
 
+import type { PokemonType } from "../../../store/search-pokemon";
+
 import request from "../../../services/requests";
 
 type EvolutionChain = {
@@ -37,7 +39,7 @@ export interface PokemonEvolutionState {
 interface usePokemonInfosHookType {
   isLoading: boolean;
   hasError: boolean;
-  pokemon: any;
+  pokemon: PokemonType | null;
   pokemonListByType: PokemonListByTypeState;
   pokemonAbilityState: PokemonAbilityState;
   pokemonEvolutionState: PokemonEvolutionState;

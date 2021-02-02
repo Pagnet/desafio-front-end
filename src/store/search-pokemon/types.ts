@@ -6,7 +6,7 @@ export interface PokemonType {
   height: number;
   types: PokemonBasicInfo[];
   abilities: PokemonBasicInfo[];
-  stats: PokemonStat[];
+  stats: PokemonStat;
   species: PokemonBasicInfo;
 }
 
@@ -16,8 +16,7 @@ export interface PokemonBasicInfo {
 }
 
 export interface PokemonStat {
-  name: string;
-  baseStat: number;
+  [key: string]: number;
 }
 
 export interface SearchPokemonState {

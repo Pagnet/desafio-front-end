@@ -2,8 +2,11 @@ import { Typography, Button } from "@useblu/ocean-components";
 
 import { Container, ButtonContainer } from "./styled-components";
 
+import type { PokemonType } from "../../../store/search-pokemon";
+import type { PokemonPokedex } from "../../../store/pokedex";
+
 interface PokemonCardProps {
-  pokemon: any;
+  pokemon: PokemonType | PokemonPokedex;
   primaryButtonText: string;
   primaryButtonAction: () => void;
   secondaryButtonText: string;

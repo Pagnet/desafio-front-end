@@ -1,4 +1,3 @@
-import { Typography } from "@useblu/ocean-components";
 import styled from "styled-components";
 
 import { spacing, colors } from "../../../../../constants";

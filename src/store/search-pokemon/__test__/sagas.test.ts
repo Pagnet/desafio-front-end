@@ -136,32 +136,14 @@ const mockedPokemon = {
       url: "https://pokeapi.co/api/v2/ability/80/",
     },
   ],
-  stats: [
-    {
-      baseStat: 70,
-      name: "hp",
-    },
-    {
-      baseStat: 80,
-      name: "attack",
-    },
-    {
-      baseStat: 50,
-      name: "defense",
-    },
-    {
-      baseStat: 35,
-      name: "special-attack",
-    },
-    {
-      baseStat: 35,
-      name: "special-defense",
-    },
-    {
-      baseStat: 35,
-      name: "speed",
-    },
-  ],
+  stats: {
+    hp: 70,
+    attack: 80,
+    defense: 50,
+    "special-attack": 35,
+    "special-defense": 35,
+    speed: 35,
+  },
   species: {
     name: "machop",
     url: "https://pokeapi.co/api/v2/pokemon-species/66/",
