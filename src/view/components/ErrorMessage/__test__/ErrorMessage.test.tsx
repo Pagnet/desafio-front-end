@@ -33,3 +33,12 @@ test("fires given function when button is pressed", () => {
 
   expect(mockFunction).toHaveBeenCalledTimes(1);
 });
+
+test("does not render button when button action is not passed", () => {
+  render(<ErrorMessage message="Testing" buttonText={"Button test"} />);
+
+  const text = screen.getByText("Testing");
+  const buttonText = screen.queryByText("Button test");
+  expect(text).toBeInTheDocument();
+  expect(buttonText).toBeNull();
+});

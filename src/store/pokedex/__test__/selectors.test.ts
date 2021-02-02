@@ -123,7 +123,7 @@ const pokedexSlice = {
 };
 const mockedState = {
   pokedex: pokedexSlice,
-  pokemonInfos: {
+  searchPokemon: {
     loading: false,
     error: null,
     pokemon: null,

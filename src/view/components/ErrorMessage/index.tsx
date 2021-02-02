@@ -6,8 +6,8 @@ import { Container, Img } from "./styled-components";
 
 interface ErrorMessageProps {
   message: string;
-  buttonText: string;
-  buttonAction: () => void;
+  buttonText?: string;
+  buttonAction?: () => void;
 }
 
 const ErrorMessage = ({
@@ -18,7 +18,7 @@ const ErrorMessage = ({
   <Container>
     <Typography variant="lead">{message}</Typography>
     <Img src={pokeError} alt="" width={150} />
-    <Button onClick={buttonAction}>{buttonText}</Button>
+    {buttonAction && <Button onClick={buttonAction}>{buttonText}</Button>}
   </Container>
 );
 
