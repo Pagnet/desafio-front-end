@@ -1,71 +1,42 @@
-# Desafio programação - para vaga Front-end
+# PokéFind: learn more about Pokémon
 
-O intuito deste teste é avaliar seus conhecimentos técnicos em React.
+In this project you can search for your favorite Pokémon, learn more information about them and save them in your own Pokédex.
 
-O teste consiste em utilizar a API([pokeapi v2](https://pokeapi.co/docsv2/#)) para construção de uma Pokédex.
+We use [PokeAPI](https://pokeapi.co/) as source of information.
 
-Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas.
+# How to use
 
-# Instruções de entrega do desafio
+## Installing
 
-1. Primeiro, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir).
-2. Em seguida, implemente o projeto tal qual descrito abaixo, em seu clone local.
-3. Por fim, envie via email um arquivo patch para seu contato na BLU.
+1. clone this repository;
+2. enter on root folder and run `yarn install'.
 
-# Descrição do projeto
+## Running
 
-Com esta API([pokeapi v2](https://pokeapi.co/docsv2/#)) em mãos, precisamos que você crie uma interface WEB para exibir as informações dos pokémons capturados.
+To run the project, enter on root folder and run 'yarn start'
 
-**Sua aplicação DEVE:**
+# Development informations
 
-1. Ter um filtro para buscar os pokémons por nome ou número
-2. Adicionar ou capturar, como preferir, novos pokémons a Pokédex que a principio estará vazia
-3. Listar os pokémons que foram adicionados a Pokédex
-4. Mostrar detalhes do personagem adicionados a Pokédex como: 
-    - Nome
-    - Imagem dando a opção do usuário fazer upload de sua própria imagem, substituindo a que é entregue via API
-    - Peso
-    - Tamanho
-    - Lista de tipos
-    - Lista de habilidades
-    - Estatísticas de velocidade
-    - Defesa
-    - Ataque
-    - Hp
-    - Cada passo de sua evolução
-    - Ao clicar em um item da lista de tipos, mostrar todos os pokémons daquele mesmo tipo, inclusive os que ainda não estão adicionados a Pokédex
-    - Ao clicar em um item da lista de habilidades mostrar o `short_effect` da mesma
-5. Excluir os pokémons que foram adicionados a Pokédex
+## Dependencies
 
-**Sua aplicação web NÃO PRECISA:**
+- this project was created using [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 
-1. Lidar com autenticação ou autorização (pontos extras se ela fizer)
-2. Não precisa estar hospedada em nenhum servidor
-3. Lidar com APIs que não seja a recomendada pelo teste
-4. Ser escrita usando algum framework específico (mas não há nada errado em usá-los também, use o que achar melhor).
+-[react-router-dom](https://reactrouter.com/web/guides/quick-start) to control navigation
 
-# Tecnologias que deve estar presentes no teste
+- [redux](https://redux.js.org/) to control state
 
-- React
-- Redux
-- React Testing Library
+- [redux-saga](https://redux-saga.js.org/) to manage side effects
 
-**Não necessário mas se tiver será um diferencial**
+- [reselect](https://github.com/reduxjs/reselect) to help to create selector
 
-- Redux-saga
+- [styled-components](https://styled-components.com/) to style our components
 
-# Avaliação
+- [typescript](https://www.typescriptlang.org/) to add types to our code
 
-Seu projeto será avaliado de acordo com os seguintes critérios.
+- [testing-library](https://testing-library.com/docs/react-testing-library/intro/) to run our tests
 
-1. Sua aplicação preenche os requerimentos básicos?
-2. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
-3. Você seguiu as instruções de envio do desafio?
-4. Qualidade e cobertura dos testes unitários.
-5. Ter uma aparência bonita
+## Running tests
 
-Adicionalmente, tentaremos verificar a sua familiarização com as bibliotecas padrões (standard libs), bem como sua experiência com programação funcional a partir da estrutura de seu projeto.
+To to run only tests, run 'yarn test'
 
----
-
-## Boa sorte!
+If you want to run type check and tests, run 'yarn test:ts'
